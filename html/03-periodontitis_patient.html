@@ -1,0 +1,1434 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staging &#8212; PARES - Application of the 2018 EFP/AAP periodontitis case classification to DMS-V data</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Extend and Grading" href="04-extend_and_grading.html" />
+    <link rel="prev" title="Special cases and non-periodontitis patient" href="02-non-periodontitis_patient.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/PARES-Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">PARES - Application of the 2018 EFP/AAP periodontitis case classification to DMS-V data</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00-Introduction.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-cohort_subsetting.html">
+   Cohort of interest
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-non-periodontitis_patient.html">
+   Special cases and non-periodontitis patient
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Staging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-extend_and_grading.html">
+   Extend and Grading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Summmary.html">
+   Summary
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/03-periodontitis_patient.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/03-periodontitis_patient.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-cohort-dataset">
+   Load cohort dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#periodontitis-cases-step-2b-staging-without-mt">
+   Periodontitis cases (Step 2b - Staging (without
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     MT
+    </span>
+   </code>
+   ))
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-maximum-cal-is-1-mm">
+     Check for
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       maximum
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       is
+      </span>
+      <span class="pre">
+       ≥1
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-interdental-cal-is-detectable-at-2-non-adjacent-teeth">
+     Check for interdental CAL is detectable at ≥2 non-adjacent teeth
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-buccal-or-oral-cal-3-mm-with-pocketing-3-mm-at-any-site-is-detectable-at-2-teeth">
+     Check for buccal or oral CAL ≥3 mm with pocketing ≥3 mm (at any site) is detectable at ≥2 teeth
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#occluding-pairs">
+   Occluding pairs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excurse-what-if-we-would-consider-all-mt-as-being-lost-due-to-periodontitis-see-step-2a-staging-with-mt">
+     Excurse
+     <em>
+      What if we would consider all MT as being lost due to periodontitis?
+     </em>
+     (see Step 2a - Staging (with
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       MT
+      </span>
+     </code>
+     ))
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#occlusal-pairs-10-mt-4">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         occlusal
+        </span>
+        <span class="pre">
+         pairs
+        </span>
+        <span class="pre">
+         &lt;
+        </span>
+        <span class="pre">
+         10
+        </span>
+        <span class="pre">
+         &amp;
+        </span>
+        <span class="pre">
+         mt
+        </span>
+        <span class="pre">
+         &gt;
+        </span>
+        <span class="pre">
+         4
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-5-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       ≥5
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-3-4-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       3-4
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-1-2-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       1-2
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#no-interdental-cal-measurements">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       No
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       measurements
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leftover-due-to-no-cal-measurements">
+     Leftover due to no CAL measurements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-to-disk">
+   Save to disk
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-dict">
+     Save dict
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Staging</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-cohort-dataset">
+   Load cohort dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#periodontitis-cases-step-2b-staging-without-mt">
+   Periodontitis cases (Step 2b - Staging (without
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     MT
+    </span>
+   </code>
+   ))
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-maximum-cal-is-1-mm">
+     Check for
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       maximum
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       is
+      </span>
+      <span class="pre">
+       ≥1
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-interdental-cal-is-detectable-at-2-non-adjacent-teeth">
+     Check for interdental CAL is detectable at ≥2 non-adjacent teeth
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-for-buccal-or-oral-cal-3-mm-with-pocketing-3-mm-at-any-site-is-detectable-at-2-teeth">
+     Check for buccal or oral CAL ≥3 mm with pocketing ≥3 mm (at any site) is detectable at ≥2 teeth
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#occluding-pairs">
+   Occluding pairs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excurse-what-if-we-would-consider-all-mt-as-being-lost-due-to-periodontitis-see-step-2a-staging-with-mt">
+     Excurse
+     <em>
+      What if we would consider all MT as being lost due to periodontitis?
+     </em>
+     (see Step 2a - Staging (with
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       MT
+      </span>
+     </code>
+     ))
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#occlusal-pairs-10-mt-4">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         occlusal
+        </span>
+        <span class="pre">
+         pairs
+        </span>
+        <span class="pre">
+         &lt;
+        </span>
+        <span class="pre">
+         10
+        </span>
+        <span class="pre">
+         &amp;
+        </span>
+        <span class="pre">
+         mt
+        </span>
+        <span class="pre">
+         &gt;
+        </span>
+        <span class="pre">
+         4
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-5-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       ≥5
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-3-4-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       3-4
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-interdental-cal-1-2-mm">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Maximum
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       1-2
+      </span>
+      <span class="pre">
+       mm
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#no-interdental-cal-measurements">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       No
+      </span>
+      <span class="pre">
+       interdental
+      </span>
+      <span class="pre">
+       CAL
+      </span>
+      <span class="pre">
+       measurements
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leftover-due-to-no-cal-measurements">
+     Leftover due to no CAL measurements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-to-disk">
+   Save to disk
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-dict">
+     Save dict
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="staging">
+<h1>Staging<a class="headerlink" href="#staging" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="c1"># Load the &quot;autoreload&quot; extension</span>
+<span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="c1"># always reload modules</span>
+<span class="o">%</span><span class="k">autoreload</span> 2
+<span class="c1"># black formatter for jupyter notebooks</span>
+<span class="c1">#%load_ext nb_black</span>
+<span class="c1"># black formatter f|or jupyter lab</span>
+<span class="o">%</span><span class="k">load_ext</span> lab_black
+
+<span class="o">%</span><span class="k">run</span> ../src/notebook_env.py
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
+Working on the host: unknownA07817A930E2
+
+---------------------------------
+Python version: 3.9.7 (default, Sep 16 2021, 08:50:36) 
+[Clang 10.0.0 ]
+
+---------------------------------
+Python interpreter: /opt/miniconda3/envs/idz-parostatus/bin/python
+
+---------------------------------
+Root (ROOT) directory is set to /Users/jokr/Documents/Projekte_Extern/IDZ/DMS-V-ParoStatus
+---------------------------------
+data (DATA) directory is set to /Users/jokr/Documents/Projekte_Extern/IDZ/DMS-V-ParoStatus/data
+---------------------------------
+Attaching the following source folders:
+/Users/jokr/Documents/Projekte_Extern/IDZ/DMS-V-ParoStatus/src
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Import modules</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">util</span> <span class="kn">import</span> <span class="n">FdiNomenclaure</span><span class="p">,</span> <span class="n">less_than_two_non_adjacent_teeth</span>
+
+<span class="n">fdi</span> <span class="o">=</span> <span class="n">FdiNomenclaure</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="load-cohort-dataset">
+<h2>Load cohort dataset<a class="headerlink" href="#load-cohort-dataset" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fp</span> <span class="o">=</span> <span class="n">DATA</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;processed&quot;</span><span class="p">)</span>
+<span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_periodontitis_cases.parquet&quot;</span>
+<span class="n">file</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">file</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(927, 748)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="periodontitis-cases-step-2b-staging-without-mt">
+<h2>Periodontitis cases (Step 2b - Staging (without <code class="docutils literal notranslate"><span class="pre">MT</span></code>))<a class="headerlink" href="#periodontitis-cases-step-2b-staging-without-mt" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/Staging_wo_MT.png" src="_images/Staging_wo_MT.png" />
+<p>If maximum CAL is ≥1 mm, the periodontitis case criterion (interdental CAL is detectable at ≥2 non-adjacent teeth, or buccal or oral CAL ≥3 mm with pocketing ≥3 mm is detectable at ≥2 teeth) is checked.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">staged_patients</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="check-for-maximum-cal-is-1-mm">
+<h3>Check for <code class="docutils literal notranslate"><span class="pre">maximum</span> <span class="pre">CAL</span> <span class="pre">is</span> <span class="pre">≥1</span> <span class="pre">mm</span></code><a class="headerlink" href="#check-for-maximum-cal-is-1-mm" title="Permalink to this headline">¶</a></h3>
+<p>Except 90 special staging case no CAL measurement</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_max_CAL_geg_1_mm</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">,</span> <span class="s2">&quot;maxCALbo&quot;</span><span class="p">]]</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">recall_no_CAL_staging_case</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="k">assert</span> <span class="p">(</span>
+    <span class="n">_max_CAL_geg_1_mm</span> <span class="o">==</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">recall_no_CAL_staging_case</span>
+<span class="p">),</span> <span class="n">_max_CAL_geg_1_mm</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="check-for-interdental-cal-is-detectable-at-2-non-adjacent-teeth">
+<h3>Check for interdental CAL is detectable at ≥2 non-adjacent teeth<a class="headerlink" href="#check-for-interdental-cal-is-detectable-at-2-non-adjacent-teeth" title="Permalink to this headline">¶</a></h3>
+<p>Except 36 special staging case no CAL measurement</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALappr\d</span><span class="si">{2}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">]]</span>
+<span class="n">interCAL_geq2_NA_tooth</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">interCAL_geq2_NA_tooth</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">interCAL_geq2_NA_tooth</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">interCAL_geq2_NA_tooth</span> <span class="o">=</span> <span class="n">interCAL_geq2_NA_tooth</span><span class="p">[[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">full_dentition</span><span class="p">]]</span>
+<span class="n">interCAL_geq2_NA_tooth_idx</span> <span class="o">=</span> <span class="n">less_than_two_non_adjacent_teeth</span><span class="p">(</span>
+    <span class="n">interCAL_geq2_NA_tooth</span><span class="p">,</span> <span class="n">fdi</span><span class="o">.</span><span class="n">full_dentition</span>
+<span class="p">)</span>
+<span class="n">recall_few_teeth_staging</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">interCAL_geq2_NA_tooth_idx</span><span class="p">)</span> <span class="o">-</span> <span class="n">recall_few_teeth_staging</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span>
+    <span class="n">interCAL_geq2_NA_tooth_idx</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="check-for-buccal-or-oral-cal-3-mm-with-pocketing-3-mm-at-any-site-is-detectable-at-2-teeth">
+<h3>Check for buccal or oral CAL ≥3 mm with pocketing ≥3 mm (at any site) is detectable at ≥2 teeth<a class="headerlink" href="#check-for-buccal-or-oral-cal-3-mm-with-pocketing-3-mm-at-any-site-is-detectable-at-2-teeth" title="Permalink to this headline">¶</a></h3>
+<p>Except 36 special staging case no CAL measurement</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALbo\d</span><span class="si">{2}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">]]</span>
+<span class="n">boCAL_geq2_NA_tooth</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">boCAL_geq2_NA_tooth</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">boCAL_geq2_NA_tooth</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">boCAL_geq2_NA_tooth</span> <span class="o">=</span> <span class="n">boCAL_geq2_NA_tooth</span><span class="p">[[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">full_dentition</span><span class="p">]]</span>
+<span class="n">boCAL_geq2_NA_tooth_idx</span> <span class="o">=</span> <span class="n">less_than_two_non_adjacent_teeth</span><span class="p">(</span>
+    <span class="n">boCAL_geq2_NA_tooth</span><span class="p">,</span> <span class="n">fdi</span><span class="o">.</span><span class="n">full_dentition</span>
+<span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">boCAL_geq2_NA_tooth_idx</span><span class="p">)</span> <span class="o">-</span> <span class="n">recall_few_teeth_staging</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span>
+    <span class="n">boCAL_geq2_NA_tooth_idx</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="occluding-pairs">
+<h2>Occluding pairs<a class="headerlink" href="#occluding-pairs" title="Permalink to this headline">¶</a></h2>
+<p>Staging can be modified by the number of missing teeth attributed to periodontitis or the presence of at least one complexity factor (maximum PD, having less than 10 opposing pairs) irrespective of maximum interdental CAL (Papapanou et al., 2018).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;zb\d</span><span class="si">{2}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">]]</span>
+<span class="n">occluding_pairs</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">occluding_pairs</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">occluding_pairs</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="c1"># occluding_pairs.head()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(927, 748)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pd.melt(occluding_pairs)[&quot;value&quot;].unique()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inclusion_criteria</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Ohne Zahnbefund&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Vollkrone&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Ankerkrone&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Ersetzter Zahn&quot;</span><span class="p">,</span>
+    <span class="c1"># &quot;Fehlender, nicht ersetzter Zahn&quot;,</span>
+    <span class="s2">&quot;Brückenglied&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Implantat mit festsitzendem Zahnersatz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Implantat mit herausnehmbarem Zahnersatz&quot;</span><span class="p">,</span>
+    <span class="c1"># &quot;Extrahiert, wegen Karies&quot;,</span>
+    <span class="s2">&quot;Teilkrone (auch Veneer)&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">upper_bool</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">occluding_pairs</span><span class="p">[[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">upper</span><span class="p">]]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">inclusion_criteria</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">upper</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fdi</span><span class="o">.</span><span class="n">upper</span><span class="p">)))))</span>
+
+<span class="n">lower_bool</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">occluding_pairs</span><span class="p">[[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">lower</span><span class="p">]]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">inclusion_criteria</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fdi</span><span class="o">.</span><span class="n">lower</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fdi</span><span class="o">.</span><span class="n">lower</span><span class="p">)))))</span>
+
+<span class="n">pairs_bool</span> <span class="o">=</span> <span class="n">upper_bool</span> <span class="o">&amp;</span> <span class="n">lower_bool</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="p">(</span><span class="n">pairs_bool</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>927
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_22_1.png" src="_images/03-periodontitis_patient_22_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pairs_idx</span> <span class="o">=</span> <span class="n">pairs_bool</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">pairs_bool</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+<span class="n">occlusal_pair_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">pairs_idx</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;occlusal_pair_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">occlusal_pair_case</span>
+<span class="n">occlusal_pair_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_IV&quot;</span>
+<span class="n">occlusal_pair_case</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(96, 749)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">occlusal_pair_case</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>927
+831
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="excurse-what-if-we-would-consider-all-mt-as-being-lost-due-to-periodontitis-see-step-2a-staging-with-mt">
+<h3>Excurse <em>What if we would consider all MT as being lost due to periodontitis?</em> (see Step 2a - Staging (with <code class="docutils literal notranslate"><span class="pre">MT</span></code>))<a class="headerlink" href="#excurse-what-if-we-would-consider-all-mt-as-being-lost-due-to-periodontitis-see-step-2a-staging-with-mt" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="occlusal-pairs-10-mt-4">
+<h4><code class="docutils literal notranslate"><span class="pre">occlusal</span> <span class="pre">pairs</span> <span class="pre">&lt;</span> <span class="pre">10</span> <span class="pre">&amp;</span> <span class="pre">mt</span> <span class="pre">&gt;</span> <span class="pre">4</span></code><a class="headerlink" href="#occlusal-pairs-10-mt-4" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">mt</span><span class="p">[</span><span class="n">mt</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">occlusal_pair_case</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>680
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>Such an apporach would result in a very large number of participant to be assigned to <code class="docutils literal notranslate"><span class="pre">Stage</span> <span class="pre">IV</span></code> right away.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mt</span> <span class="o">=</span> <span class="p">(</span><span class="mi">28</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;zahnzahl&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">rot</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/03-periodontitis_patient_26_0.png" src="_images/03-periodontitis_patient_26_0.png" />
+</div>
+</div>
+<div class="section" id="maximum-interdental-cal-5-mm">
+<h3><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">interdental</span> <span class="pre">CAL</span> <span class="pre">≥5</span> <span class="pre">mm</span></code><a class="headerlink" href="#maximum-interdental-cal-5-mm" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_geq5</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">maxCAL_geq5_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_geq5</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;maxCAL_geq5_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">maxCAL_geq5_case</span>
+<span class="n">maxCAL_geq5_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_IV&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALappr|\d</span><span class="si">{2}</span><span class="s2">&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">maxCAL_geq5_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">maxCAL_geq5_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">maxCAL_geq5_case</span><span class="p">[</span><span class="s2">&quot;affected_teeth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">maxCAL_geq5_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">maxCAL_geq5_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">maxCAL_geq5_case</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>592
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_34_1.png" src="_images/03-periodontitis_patient_34_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">maxCAL_geq5_case</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>831
+239
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="maximum-interdental-cal-3-4-mm">
+<h3><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">interdental</span> <span class="pre">CAL</span> <span class="pre">3-4</span> <span class="pre">mm</span></code><a class="headerlink" href="#maximum-interdental-cal-3-4-mm" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_3to4mm</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span>
+    <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">4</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_3to4mm_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_3to4mm</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(149, 748)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;st\d</span><span class="si">{2}</span><span class="s2">\w</span><span class="si">{4}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_PD_leq5</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">5</span>  <span class="c1"># II</span>
+<span class="n">cond_PD_geq6</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">6</span>  <span class="c1"># III</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># cond_3to4mm_case</span>
+<span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_geq6</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_III&quot;</span>
+<span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_leq5</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_II&quot;</span>
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;cond_3to4mm_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALappr|\d</span><span class="si">{2}</span><span class="s2">&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="s2">&quot;affected_teeth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">cond_3to4mm_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>149
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_42_1.png" src="_images/03-periodontitis_patient_42_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">cond_3to4mm_case</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>239
+90
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="maximum-interdental-cal-1-2-mm">
+<h3><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">interdental</span> <span class="pre">CAL</span> <span class="pre">1-2</span> <span class="pre">mm</span></code><a class="headerlink" href="#maximum-interdental-cal-1-2-mm" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_1to2mm</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span>
+    <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">2</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_1to2mm_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_1to2mm</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(4, 748)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;st\d</span><span class="si">{2}</span><span class="s2">\w</span><span class="si">{4}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_PD_leq4</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">4</span>  <span class="c1"># I</span>
+<span class="n">cond_PD_eq5</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>  <span class="c1"># II</span>
+<span class="n">cond_PD_geq6</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">6</span>  <span class="c1"># III</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_leq4</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_I&quot;</span>
+<span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_eq5</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_II&quot;</span>
+<span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_geq6</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_III&quot;</span>
+
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;cond_1to2mm_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALappr|\d</span><span class="si">{2}</span><span class="s2">&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="s2">&quot;affected_teeth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">cond_1to2mm_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_50_1.png" src="_images/03-periodontitis_patient_50_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">cond_1to2mm_case</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>90
+86
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="no-interdental-cal-measurements">
+<h3><code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">interdental</span> <span class="pre">CAL</span> <span class="pre">measurements</span></code><a class="headerlink" href="#no-interdental-cal-measurements" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_0mm</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;maxCALappr&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="n">cond_0mm_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_0mm</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, 748)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;st\d</span><span class="si">{2}</span><span class="s2">\w</span><span class="si">{4}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_PD_leq4</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">4</span>  <span class="c1"># I</span>
+<span class="n">cond_PD_eq5</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>  <span class="c1"># II</span>
+<span class="n">cond_PD_geq6</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">6</span>  <span class="c1"># III</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_leq4</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_I&quot;</span>
+<span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_eq5</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_II&quot;</span>
+<span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_geq6</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_III&quot;</span>
+
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;cond_0mm_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cond_0mm_case</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;maxCALappr|\d</span><span class="si">{2}</span><span class="s2">&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_0mm_case</span><span class="p">[</span><span class="s2">&quot;affected_teeth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">cond_0mm_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_57_1.png" src="_images/03-periodontitis_patient_57_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">cond_0mm_case</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>86
+84
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="leftover-due-to-no-cal-measurements">
+<h3>Leftover due to no CAL measurements<a class="headerlink" href="#leftover-due-to-no-cal-measurements" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_noCAL_case</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(84, 748)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;st\d</span><span class="si">{2}</span><span class="s2">\w</span><span class="si">{4}</span><span class="s2">$&quot;</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span>
+    <span class="p">[</span><span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="n">cond_PD_leq4</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">4</span>  <span class="c1"># I</span>
+<span class="n">cond_PD_eq5</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>  <span class="c1"># II</span>
+<span class="n">cond_PD_geq6</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">6</span>  <span class="c1"># III</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_leq4</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_I&quot;</span>
+<span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_eq5</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_II&quot;</span>
+<span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">cond_PD_geq6</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Stage_III&quot;</span>
+
+<span class="n">staged_patients</span><span class="p">[</span><span class="s2">&quot;noCAL_case&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">cond_noCAL_case</span><span class="p">[</span><span class="s2">&quot;classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cond_noCAL_case</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>84
+</pre></div>
+</div>
+<img alt="_images/03-periodontitis_patient_63_1.png" src="_images/03-periodontitis_patient_63_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="save-to-disk">
+<h2>Save to disk<a class="headerlink" href="#save-to-disk" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_staged_periodontitis_cases.parquet&quot;</span>
+<span class="n">fp</span> <span class="o">=</span> <span class="n">DATA</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;processed&quot;</span><span class="p">,</span> <span class="n">fn</span><span class="p">)</span>
+
+<span class="n">_staged_patients</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">staged_patients</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">_staged_patients</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="n">_staged_patients</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">_staged_patients</span><span class="p">)</span>
+<span class="n">_staged_patients</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">fp</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">fp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="save-dict">
+<h3>Save dict<a class="headerlink" href="#save-dict" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">staged_patients</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="02-non-periodontitis_patient.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Special cases and non-periodontitis patient</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="04-extend_and_grading.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Extend and Grading</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Joachim Krois<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
