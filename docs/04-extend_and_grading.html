@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extend and Grading &#8212; PARES - Application of the 2018 EFP/AAP periodontitis case classification to DMS-V data</title>
+    <title>Extent and Grading &#8212; PARES - Application of the 2018 EFP/AAP periodontitis case classification to DMS-V data</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -114,7 +114,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Extend and Grading
+   Extent and Grading
   </a>
  </li>
  <li class="toctree-l1">
@@ -226,6 +226,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#average">
+     Average
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assignment-of-localized-30-or-generalized-30">
      Assignment of
      <code class="docutils literal notranslate">
@@ -269,7 +274,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Extend and Grading</h1>
+                <h1>Extent and Grading</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -292,6 +297,11 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#missing-values">
      Missing values
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#average">
+     Average
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -337,8 +347,8 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="extend-and-grading">
-<h1>Extend and Grading<a class="headerlink" href="#extend-and-grading" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="extent-and-grading">
+<h1>Extent and Grading<a class="headerlink" href="#extent-and-grading" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -357,7 +367,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>---------------------------------
-Working on the host: unknownA07817A930E2
+Working on the host: Joachims-MacBook-Pro.local
 
 ---------------------------------
 Python version: 3.9.7 (default, Sep 16 2021, 08:50:36) 
@@ -400,7 +410,7 @@ Attaching the following source folders:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fp</span> <span class="o">=</span> <span class="n">DATA</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;processed&quot;</span><span class="p">)</span>
-<span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_staged_periodontitis_cases.parquet&quot;</span>
+<span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_periodontitis_cases_staged.parquet&quot;</span>
 <span class="n">file</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">file</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
 
@@ -410,7 +420,7 @@ Attaching the following source folders:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(927, 750)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(888, 69)
 </pre></div>
 </div>
 </div>
@@ -420,21 +430,29 @@ Attaching the following source folders:
 <h2>Disease  extent<a class="headerlink" href="#disease-extent" title="Permalink to this headline">¶</a></h2>
 <p>Disease extent is described by the percentage of probed teeth presenting with the CAL condition of the identified stage, adding the number of teeth that are missing primarily due to periodontitis (if available). The number of missing teeth is determined for the same tooth positions, for which periodontal measurements were planned according to the probing protocol. For example, the maximum number of missing teeth is 28 for full-mouth periodontal recordings, 14 for half-mouth periodontal recordings, and 6 for Ramfjord teeth recordings. Wisdom teeth are excluded from calculations. Disease extent is categorized as <code class="docutils literal notranslate"><span class="pre">localized</span> <span class="pre">(&lt;30%)</span></code> or <code class="docutils literal notranslate"><span class="pre">generalized</span> <span class="pre">(≥30%)</span></code>.</p>
 <img alt="_images/Extend.png" src="_images/Extend.png" />
+<blockquote>
+<div><p><strong><em>Note: That in this analysis the number of missing teeth was added to compute the extent. But this is for sure a matter for discussion.</em></strong></p>
+</div></blockquote>
 <div class="section" id="missing-values">
 <h3>Missing values<a class="headerlink" href="#missing-values" title="Permalink to this headline">¶</a></h3>
-<p>Due to</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">CAL</span> <span class="pre">measurement</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">STAGE</span> <span class="pre">IV</span></code> assignment based on <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">10</span> <span class="pre">teeth</span> <span class="pre">with</span> <span class="pre">occlusal</span> <span class="pre">surfaces</span></code></p></li>
-</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">affected_teeth</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">data</span><span class="o">.</span><span class="n">teeth_affected_ratio</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="average">
+<h3>Average<a class="headerlink" href="#average" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">teeth_affected_ratio</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19.41747572815534
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.29531421648736406
 </pre></div>
 </div>
 </div>
@@ -445,18 +463,12 @@ Attaching the following source folders:
 <p>Disease extent is described by the percentage of probed teeth presenting with the CAL condition of the identified stage, adding the number of teeth that are missing primarily due to periodontitis (if available). Disease extent is categorized as localized (&lt;30%) or generalized (≥30%).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend_in_percent&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;affected_teeth&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;zahnzahl&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
-<span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend_in_percent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;extent&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;teeth_affected_ratio&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
     <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
     <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">else</span> <span class="s2">&quot;localized (&lt;30%)&quot;</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">30</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mf">0.30</span>
     <span class="k">else</span> <span class="s2">&quot;generalized (≥30%)&quot;</span>
-<span class="p">)</span>
-
-<span class="k">assert</span> <span class="p">(</span>
-    <span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
-    <span class="o">==</span> <span class="n">data</span><span class="o">.</span><span class="n">affected_teeth</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -464,37 +476,59 @@ Attaching the following source folders:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;extent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;extent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>747
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>888
 </pre></div>
 </div>
-<img alt="_images/04-extend_and_grading_13_1.png" src="_images/04-extend_and_grading_13_1.png" />
+<img alt="_images/04-extend_and_grading_16_1.png" src="_images/04-extend_and_grading_16_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;classification&quot;</span><span class="p">)[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;staging_with_MT&quot;</span><span class="p">)[</span><span class="s2">&quot;extent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;extend&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Extent for staging with MT&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;staging_with_MT&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>747
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>888
 </pre></div>
 </div>
-<img alt="_images/04-extend_and_grading_14_1.png" src="_images/04-extend_and_grading_14_1.png" />
+<img alt="_images/04-extend_and_grading_17_1.png" src="_images/04-extend_and_grading_17_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;staging_without_MT&quot;</span><span class="p">)[</span><span class="s2">&quot;extent&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Extent for staging without MT&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;staging_without_MT&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>888
+</pre></div>
+</div>
+<img alt="_images/04-extend_and_grading_18_1.png" src="_images/04-extend_and_grading_18_1.png" />
 </div>
 </div>
 </div>
@@ -503,12 +537,16 @@ Attaching the following source folders:
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
 <p>Study participants can be graded if baseline data for bone loss (or follow-up data for bone loss or CAL), age, smoking status, the number of cigarettes per day, diabetes diagnosis, and HbA1c are non-missing. Periodontitis cases are first categorized as grade B (Tonetti et al., 2018). Participants with non-missing data for smoking status and the number of cigarettes per day, with no diagnosis of diabetes but missing HbA1c levels are graded as B (Figure 4). The periodontitis grade can then be modified by the smoking and the diabetes status. Non-smoking, normoglycemic periodontitis cases with no diagnosis of diabetes and % bone loss/age&lt;0.25 are categorized as grade A. If periodontitis cases either have % bone loss/age&gt;1.00 or are smokers with ≥10 cigarettes per day or are diabetes patients with an HbA1c ≥7.0%, they are categorized as grade C. Information on the case phenotype is usually not available in observational studies and is therefore not considered in the process of grading.</p>
 <img alt="_images/Grading.png" src="_images/Grading.png" />
+<blockquote>
+<div><p><strong><em>Note: For grading the bone loss in % is missing. The experts will investigate if we could use standardised  tooth lengths and compute the bone loss in % thereafter.</em></strong></p>
+</div></blockquote>
+<p>$$\text{Bone loss (in %)} = \frac{100 \times  CAL}{\text{tooth length}} $$</p>
 </div>
 <div class="section" id="save-to-disk">
 <h2>Save to disk<a class="headerlink" href="#save-to-disk" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_staged_extend_periodontitis_cases.parquet&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fn</span> <span class="o">=</span> <span class="s2">&quot;dmsV_periodontitis_cases_staged_extent.parquet&quot;</span>
 <span class="n">fp</span> <span class="o">=</span> <span class="n">DATA</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;processed&quot;</span><span class="p">,</span> <span class="n">fn</span><span class="p">)</span>
 <span class="n">data</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">fp</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">fp</span>
